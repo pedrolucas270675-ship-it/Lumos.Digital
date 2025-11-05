@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumos Tech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset e tipografia */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background-color: #f9f9f9; color: #111; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Header */
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 10%; background-color: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+    header .logo { font-weight: 700; font-size: 1.8rem; color: #111; }
+    nav a { margin-left: 30px; font-weight: 500; transition: 0.3s; }
+    nav a:hover { color: #4f46e5; }
+
+    /* Hero */
+    .hero { text-align: center; padding: 120px 10%; background: linear-gradient(to right, #4f46e5, #6366f1); color: #fff; }
+    .hero h1 { font-size: 2.8rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 30px; }
+    .hero a { background-color: #fff; color: #4f46e5; padding: 12px 25px; font-weight: 600; border-radius: 8px; transition: 0.3s; }
+    .hero a:hover { background-color: #e0e7ff; }
+
+    /* Sections */
+    section { padding: 80px 10%; }
+    section h2 { font-size: 2rem; margin-bottom: 25px; color: #111; }
+    section p { font-size: 1rem; margin-bottom: 15px; color: #333; }
+    .services, .diferenciais { display: flex; flex-wrap: wrap; gap: 30px; }
+    .card { background-color: #fff; padding: 20px; border-radius: 10px; flex: 1 1 calc(50% - 30px); box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: 0.3s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0,0,0,0.15); }
+    .card h3 { margin-bottom: 15px; color: #4f46e5; }
+
+    /* Contato */
+    form { display: flex; flex-direction: column; max-width: 500px; margin-top: 20px; }
+    input, textarea { padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px; }
+    button { padding: 12px; background-color: #4f46e5; color: #fff; font-weight: 600; border-radius: 6px; border: none; cursor: pointer; transition: 0.3s; }
+    button:hover { background-color: #6366f1; }
+
+    /* Footer */
+    footer { background-color: #111; color: #fff; padding: 30px 10%; display: flex; justify-content: space-between; flex-wrap: wrap; }
+    footer a { color: #fff; margin-right: 20px; transition: 0.3s; }
+    footer a:hover { color: #4f46e5; }
+
+    @media(max-width: 768px){
+      .services, .diferenciais { flex-direction: column; }
+      nav a { margin-left: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Lumos Tech</div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#treinamentos">Treinamentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Transformando a presença digital da sua igreja</h1>
+    <p>Treinamento, tecnologia e evangelismo digital em um só lugar.</p>
+    <a href="#contato">Fale Conosco</a>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre">
+    <h2>Quem Somos</h2>
+    <p>Lumos Tech é um projeto voltado para igrejas de todos os portes, oferecendo soluções completas de mídia, transmissões ao vivo e evangelismo digital.</p>
+    <p>Nosso objetivo é capacitar membros e voluntários para que sua igreja alcance mais pessoas e tenha processos internos mais eficientes.</p>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Treinamento e Capacitação</h3>
+        <p>Operação de sistemas de áudio, vídeo e transmissões. Capacitação em evangelismo digital e produção de conteúdo.</p>
+      </div>
+      <div class="card">
+        <h3>Estruturação de Mídia e Tecnologia</h3>
+        <p>Implementação de links dedicados, organização de estúdios e garantia de qualidade nas transmissões ao vivo.</p>
+      </div>
+      <div class="card">
+        <h3>Consultoria Estratégica</h3>
+        <p>Avaliação de processos, planejamento digital e suporte em softwares e ferramentas para sua igreja.</p>
+      </div>
+      <div class="card">
+        <h3>Evangelismo Digital</h3>
+        <p>Criação de conteúdo para redes sociais, produção de vídeos e monitoramento de métricas de engajamento e alcance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Treinamentos -->
+  <section id="treinamentos">
+    <h2>Cursos e Treinamentos</h2>
+    <p>Oferecemos cursos online, tutoriais e treinamentos práticos voltados para mídia, transmissão e evangelismo digital.</p>
+    <p>Capacite sua equipe e amplie o alcance da sua igreja de forma profissional.</p>
+  </section>
+
+  <!-- Diferenciais -->
+  <section class="diferenciais">
+    <h2>Por que escolher Lumos Tech?</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Atendimento completo</h3>
+        <p>Atende desde pequenas até grandes igrejas, com soluções personalizadas.</p>
+      </div>
+      <div class="card">
+        <h3>Foco em Pessoas e Tecnologia</h3>
+        <p>Capacitação de equipes aliada à implementação de soluções técnicas eficientes.</p>
+      </div>
+      <div class="card">
+        <h3>Suporte Contínuo</h3>
+        <p>Acompanhamento constante para garantir que sua igreja mantenha excelência digital.</p>
+      </div>
+      <div class="card">
+        <h3>Alcance e Engajamento</h3>
+        <p>Estratégias digitais para ampliar o público e engajar sua comunidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <form>
+      <input type="text" placeholder="Nome" required>
+      <input type="email" placeholder="E-mail" required>
+      <textarea rows="5" placeholder="Mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </div>
+    <div>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+    </div>
+    <p>© 2025 Lumos Tech. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
